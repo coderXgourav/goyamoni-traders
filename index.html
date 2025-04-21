@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goyamoni Traders - Snehashis Swarnakar | Paddy, Wheat</title>
+    <title>Goyamoni Traders - Snehashis Swarnakar</title>
     <meta name="description" content="Snehashis Swarnakar is an ex-army professional and the founder of Goyamoni Traders, a trusted name in the stock trading business of paddy, wheat, corn, and other agricultural commodities.">
    
     <meta name="keywords" content="Snehashis Swarnakar, Goyamoni Traders, ex-army businessman, paddy wheat corn trader, grain stockist Harirampur, agricultural stock business, Snehashis Goyamoni, Snehashis Swarnakar Harirampur, Snehashis Swarnakar army, Goyamoni grain supplier, Bengal grain stockist, agri trader Harirampur, Snehashis Swarnakar entrepreneur, Goyamoni Traders Bengal, wholesale grain trader India">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Goyamoni Traders - Grain & Agricultural Stock Supplier">
+<meta property="og:description" content="Ex-army officer Snehashis Swarnakar now leads Goyamoni Traders, a trusted name in agricultural stock business in India.">
+<meta property="og:image" content="https://goyamoni-traders.vercel.app/img/logo.png">
+<meta property="og:url" content="https://goyamoni-traders.vercel.app/">
+
+
+
     <meta name="author" content="Snehashis Swarnakar">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -14,557 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/fev/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./img/fev/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="./img/fev/favicon-192x192.png">
-    <style>
-        :root {
-            --primary-green: #1b633f;
-            --secondary-yellow: #f7ca18;
-            --light-green: #e6eee3;
-            --very-light-green: #f3f7ed;
-            --text-dark: #333333;
-            --text-light: #666666;
-            --white: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--very-light-green);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 35px;
-            background-color: var(--secondary-yellow);
-            color: var(--text-dark);
-            font-weight: 500;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .btn:hover {
-            background-color: #e0b916;
-            transform: translateY(-2px);
-        }
-
-        .btn-green {
-            background-color: var(--primary-green);
-            color: var(--white);
-        }
-
-        .btn-green:hover {
-            background-color: #17553a;
-        }
-
-        /* Header styles */
-        .top-bar {
-            background-color: var(--light-green);
-            padding: 8px 0;
-            font-size: 14px;
-        }
-
-        .top-bar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 45px;
-            margin-right: 8px;
-        }
-
-        .logo-text {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--text-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .logo-text span {
-            display: block;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-item {
-            margin-left: 30px;
-            font-weight: 500;
-        }
-
-        .nav-link {
-            color: var(--text-dark);
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-green);
-        }
-
-        .nav-link.active {
-            color: var(--primary-green);
-        }
-
-        .mobile-nav-toggle {
-            display: none;
-            background: transparent;
-            border: none;
-            color: var(--text-dark);
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Hero section */
-        .hero {
-            position: relative;
-            /* padding-top: 60px; */
-            overflow: hidden;
-            background-color: var(--white);
-        }
-
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .hero-content {
-            padding-bottom: 80px;
-        }
-
-        .hero-logo {
-            width: 80px;
-            margin-bottom: 20px;
-        }
-
-        .hero-title {
-            font-size: 42px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero-subtitle {
-            color: var(--text-light);
-            margin-bottom: 30px;
-            font-size: 16px;
-            max-width: 500px;
-        }
-
-        .hero-image {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-image img {
-            width: 100%;
-            border-radius: 6px 6px 0px 115px;
-            object-fit: cover;
-        }
-
-        .wave-shape {
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            z-index: 2;
-        }
-
-        /* .curved-bg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 60%;
-            background-color: var(--primary-green);
-            z-index: 0;
-            border-radius: 0 0 0 100px;
-        } */
-
-        /* Product cards section */
-        .products {
-            padding: 80px 0;
-            position: relative;
-        }
-
-        .product-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .product-card {
-            background-color: var(--secondary-yellow);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:nth-child(even) {
-            background-color: var(--primary-green);
-            color: var(--white);
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .product-content {
-            padding: 30px;
-        }
-
-        .card-title {
-            font-size: 28px;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-
-        .card-subtitle {
-            font-size: 18px;
-            margin-bottom: 15px;
-            opacity: 0.8;
-        }
-
-        .card-text {
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-
-        /* Farmers section */
-        .farmers {
-            padding: 80px 0;
-            background-color: var(--white);
-        }
-
-        .section-title {
-            font-size: 32px;
-            margin-bottom: 20px;
-            position: relative;
-            color: var(--text-dark);
-        }
-
-        .section-title span {
-            color: var(--primary-green);
-        }
-
-        .section-text {
-            margin-bottom: 40px;
-            max-width: 700px;
-            color: var(--text-light);
-        }
-
-        .farmers-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .gallery-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Sale section */
-        .sale {
-            padding: 60px 0;
-            background-color: var(--very-light-green);
-            position: relative;
-        }
-
-        .sale .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .sale-title {
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .sale-text {
-            margin-bottom: 30px;
-            color: var(--text-light);
-        }
-
-        .sale-device {
-            position: relative;
-            max-width: 300px;
-            margin-left: auto;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            border-radius: 30px;
-            overflow: hidden;
-        }
-
-        .sale-device img {
-            width: 100%;
-            display: block;
-        }
-
-        /* About & Contact */
-        .about-contact {
-            padding: 80px 0;
-            background-color: var(--white);
-        }
-
-        .contact-info {
-            margin-top: 40px;
-        }
-
-        .contact-item {
-            display: flex;
-            margin-bottom: 20px;
-        }
-
-        .contact-icon {
-            font-size: 20px;
-            color: var(--primary-green);
-            margin-right: 15px;
-            margin-top: 5px;
-        }
-
-        .contact-text h4 {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .contact-text p {
-            color: var(--text-light);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-green);
-            color: var(--white);
-            padding: 60px 0 20px;
-        }
-
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-title {
-            font-size: 18px;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-   
-
-        .footer-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 2px;
-            background-color: var(--secondary-yellow);
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            transition: all 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--white);
-            padding-left: 5px;
-        }
-
-        .social-links {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background-color: var(--secondary-yellow);
-            color: var(--text-dark);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Responsive styles */
-        @media screen and (max-width: 991px) {
-            .hero-title {
-                font-size: 36px;
-            }
-            
-            .product-cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .mobile-nav-toggle {
-                display: block;
-            }
-
-            .nav-menu {
-                position: fixed;
-                top: 72px;
-                right: -100%;
-                width: 80%;
-                height: calc(100vh - 72px);
-                background-color: var(--white);
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 40px 20px;
-                transition: all 0.3s ease;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-            }
-
-            .nav-menu.active {
-                right: 0;
-            }
-
-            .nav-item {
-                margin: 15px 0;
-                width: 100%;
-            }
-
-            .hero-container {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-content {
-                order: 2;
-                padding-bottom: 40px;
-                text-align: center;
-            }
-
-            .hero-logo {
-                margin: 0 auto 20px;
-            }
-
-            .hero-subtitle {
-                margin: 0 auto 30px;
-            }
-
-            .hero-image {
-                order: 1;
-                margin-bottom: 30px;
-            }
-/* 
-            .curved-bg {
-                width: 100%;
-                border-radius: 0;
-            } */
-
-            .product-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .farmers-gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .sale .container {
-                grid-template-columns: 1fr;
-            }
-
-            .sale-device {
-                margin: 0 auto;
-                max-width: 250px;
-            }
-        }
-
-        /* Wave SVG for hero section */
-        .wave-svg {
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            z-index: 2;
-        }
-    </style>
-
+<link rel="stylesheet" href="./style.css">
 
 <script type="application/ld+json">
     {
@@ -577,18 +35,18 @@
       "telephone": "+91-7889468196",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Asram road, Harirampur, 733125",
+        "streetAddress": "Asram Road, Harirampur, 733125",
         "addressLocality": "Harirampur",
-        "addressRegion": "west bengal",
+        "addressRegion": "West Bengal",
         "postalCode": "733125",
         "addressCountry": "IN"
       },
-      "description": "Goyamoni Traders is an agricultural stock business led by ex-army professional Snehashis Swarnakar. Specializing in paddy, wheat, corn, and other grains, we serve mill owners, wholesalers, and suppliers across the region.",
+      "description": "Founded by ex-army officer Snehashis Swarnakar, Goyamoni Traders is a trusted agricultural commodities business based in Harirampur, West Bengal. Specializing in bulk supply of paddy, wheat, corn, and other grains, we connect directly with mill owners, wholesalers, and distributors across India.",
       "areaServed": "India",
       "founder": {
         "@type": "Person",
         "name": "Snehashis Swarnakar",
-        "description": "An ex-army officer turned entrepreneur, currently running Goyamoni Traders — a leading grain stock business in India dealing with paddy, wheat, corn, and other commodities.",
+        "description": "Snehashis Swarnakar is a former Indian Army officer turned agripreneur. As the Founder and Director of Goyamoni Traders, he leads one of the region’s emerging agricultural trading companies, focusing on quality grain supply and rural economic empowerment.",
         "jobTitle": "Founder & Director",
         "sameAs": [
           "https://www.facebook.com/goyamonitraders",
@@ -605,25 +63,92 @@
         "https://www.facebook.com/goyamonitraders",
         "https://www.instagram.com/goyamonitraders"
       ]
+      
     }
     </script>
-    
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Snehashis Swarnakar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Snehashis Swarnakar is a former Indian Army officer turned entrepreneur. He is the founder and director of Goyamoni Traders, a grain trading business based in Harirampur, West Bengal."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Goyamoni Traders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Goyamoni Traders is a local agricultural commodities trading business that deals in paddy, wheat, corn, and other grains. It was founded by Snehashis Swarnakar and operates out of Harirampur, West Bengal, India."
+              }
+            },
+            {
+                "@type": "Question",
+                "name": "Goyamoni Traders",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Goyamoni Traders is a local agricultural commodities trading business that deals in paddy, wheat, corn, and other grains. It was founded by Snehashis Swarnakar and operates out of Harirampur, West Bengal, India."
+                }
+              },
+            {
+              "@type": "Question",
+              "name": "What does Snehashis Swarnakar do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Snehashis Swarnakar is an agripreneur managing the operations of Goyamoni Traders, ensuring quality grain supply to mill owners, wholesalers, and distributors across India."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is Goyamoni Traders located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Goyamoni Traders is located on Asram Road, Harirampur, West Bengal, with the postal code 733125."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Goyamoni Traders specialize in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Goyamoni Traders specializes in trading agricultural commodities, particularly grains such as paddy, wheat, corn, and more."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact Goyamoni Traders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact Goyamoni Traders at +91-7889468196 or through their official social media pages on Facebook and Instagram."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Snehashis Swarnakar active on social media?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Snehashis Swarnakar manages Goyamoni Traders’ social media presence on Facebook and Instagram under the handle @goyamonitraders."
+              }
+            }
+          ]
+        }
+        </script>
 </head>
 
 <body>
     <!-- Top Bar -->
-    <!-- <div class="top-bar">
-        <div class="container">
-            <div class="welcome">Bengal's Preferred Agricultural Shop</div>
-            <div class="contact">Interactive Hot Network Below</div>
-        </div>
-    </div> -->
 
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="./img/logo.png" alt="Goyamoni Traders">
+                <img src="./img/logo.png" alt="Goyamoni Traders" loading="lazy">
                 <div class="logo-text">GOYAMONI<br><span>TRADERS</span></div>
             </div>
             <div>
@@ -651,17 +176,17 @@
             <div class="hero-content"> <br> 
                 <div style="display: flex; align-items: center; gap: 20px;">
                     <h1 class="hero-title">Goyamoni<br>Traders</h1>
-                    <img src="./img/logo.png" alt="Snehashis Swarnakar" class="hero-logo">
+                    <img src="./img/logo.png" alt="Snehashis Swarnakar" loading="lazy" class="hero-logo">
                 </div>
                 <p class="hero-subtitle">
                     Agricultural firm that delivers best trade support from farmer owned 
                     rice farms and independent specialty farms to deliver local & branded
                     foodchain service where farmers get better returns.
                 </p>
-                <a href="#" class="btn">GET STARTED</a>
+                <a href="#img" class="btn">GET STARTED</a>
             </div>
             <div class="hero-image">
-                <img src="./img/3.jpeg" alt="goyamoni traders" style="max-width: 100%;">
+                <img src="./img/3.jpeg" alt="goyamoni traders" style="max-width: 100%;" loading="lazy">
             </div>
         </div>
         <!-- Wave shape at bottom -->
@@ -713,28 +238,18 @@
                 like organic involved special variants promise.
             </p>
             <div class="farmers-gallery">
-                <img src="./img/woman.jpg" alt="Snehashis Swarnakar" class="gallery-img">
-                <img src="./img/man2.avif" alt="Snehashis Swarnakar" class="gallery-img">
+                <img src="./img/woman.jpg" alt="Snehashis Swarnakar" class="gallery-img" loading="lazy">
+                <img src="./img/man2.avif" alt="Snehashis Swarnakar" class="gallery-img" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Sale Section -->
-    <!-- <section class="sale">
-        <div class="container">
-            <div class="sale-content">
-                <h2 class="sale-title">SALE</h2>
-                <p class="sale-text">
-                    Prominent rate at rates/rates of food/crops/raw produce/less on stocks.
-                    Reduce promise.
-                </p>
-                <a href="#" class="btn">VIEW</a>
-            </div>
-            <div class="sale-device">
-                <img src="/api/placeholder/300/600" alt="Mobile view of Goyamoni Traders">
-            </div>
+    <section>
+        <div style="display: flex; justify-content: center;" id="img">
+            <img src="./img/img.png" alt="goyamoni traders" class="img-fluid" style="width: 50%; height: auto; margin: 20px;" loading="lazy">
         </div>
-    </section> -->
+    </section>
+
 
     <!-- About & Contact Section -->
     <section class="about-contact"  id="about">
@@ -745,6 +260,7 @@
                 Founded with a mission to provide fair prices to farmers and quality products to customers, 
                 we've built a reputation for integrity and reliability in the agricultural trade sector.
             </p>
+            
             
             <div class="contact-info" id="contact">
                 <div class="contact-item">
