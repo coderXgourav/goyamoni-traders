@@ -455,6 +455,11 @@ footer {
 
 /* Responsive styles */
 @media screen and (max-width: 991px) {
+    .about-contact-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .header-container {
   
